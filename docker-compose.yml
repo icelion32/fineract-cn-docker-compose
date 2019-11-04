@@ -27,7 +27,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.database: seshat
-      postgresql.port: 5432
       postgresql.host: ${POSTGRESQL_HOST}
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
@@ -78,7 +77,6 @@ services:
       feign.hystrix.enabled: "false"
       identity.token.refresh.secureCookie: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -180,7 +178,6 @@ services:
       feign.hystrix.enabled: "false"
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -225,7 +222,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -357,7 +353,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -398,7 +393,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -434,7 +428,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -470,7 +463,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -506,7 +498,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -542,7 +533,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -578,7 +568,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
