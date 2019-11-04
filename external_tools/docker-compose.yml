@@ -19,6 +19,8 @@ services:
         condition: any
         delay: 10s
         max_attempts: 3
+    networks:
+    - mynet
 
   eureka:
     image: anh3h/eureka-server:latest
@@ -35,6 +37,8 @@ services:
         condition: any
         delay: 10s
         max_attempts: 3
+    networks:
+    - mynet
 
   postgres:
     image: postgres:11
@@ -50,6 +54,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres-volume:/var/lib/postgresql/data
+    networks:
+      - mynet
 
   cassandra:
     image: cassandra:3.11
@@ -68,14 +74,14 @@ services:
         max_attempts: 3
     volumes:
       - cassandra-volume:/var/lib/cassandra
+    networks:
+      - mynet
+    
 
 volumes:
   cassandra-volume:
   postgres-volume:
 
 networks:
-  default:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.16.239.64/26
+  mynet:
+    
