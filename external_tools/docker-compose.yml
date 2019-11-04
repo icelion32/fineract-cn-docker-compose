@@ -68,6 +68,11 @@ services:
       retries: 5
     deploy:
       replicas: 1
+      resources:
+        # Hard limit - Docker does not allow to allocate more
+        limits:
+          cpus: '0.25'
+          memory: 512M
       restart_policy:
         condition: any
         delay: 10s
