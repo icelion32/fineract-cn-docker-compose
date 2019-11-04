@@ -3,12 +3,12 @@ set -e
 
 function init-variables {
     CASSANDRA_REPLICATION_TYPE="Simple"
-    CASSANDRA_CONTACT_POINTS="cassandra:9042"
+    CASSANDRA_CONTACT_POINTS="18.205.30.160:9042"
     CASSANDRA_CLUSTER_NAME="Datacenter1"
     CASSANDRA_REPLICAS="1"
 
     POSTGRES_DRIVER_CLASS="org.postgresql.Driver"
-    POSTGRES_HOST="postgres"
+    POSTGRES_HOST="18.205.30.160"
     POSTGRES_PWD="postgres"
     POSTGRESQL_PORT="5432"
     POSTGRESQL_USER="postgres"
