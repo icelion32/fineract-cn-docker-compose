@@ -10,8 +10,8 @@ function init-variables {
     POSTGRES_DRIVER_CLASS="org.postgresql.Driver"
     POSTGRES_HOST="18.205.30.160"
     POSTGRES_PWD="postgres"
-    POSTGRESQL_PORT="5432"
-    POSTGRESQL_USER="postgres"
+    POSTGRES_PORT="5432"
+    POSTGRES_USER="postgres"
 
     PROVISIONER_URL="http://18.205.30.160:2020/provisioner/v1"
     IDENTITY_URL="http://18.205.30.160:2021/identity/v1"
