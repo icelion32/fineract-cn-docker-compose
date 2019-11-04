@@ -2,7 +2,7 @@ version: "3"
 services:
   activemq:
     image: rmohr/activemq:5.14.5
-    
+    container_name: activemq
     ports:
       - "61616:61616"
       - "8161:8161"
@@ -22,7 +22,7 @@ services:
 
   eureka:
     image: anh3h/eureka-server:latest
-    
+    container_name: eureka
     ports:
       - "8761:8761"
     healthcheck:
@@ -38,7 +38,7 @@ services:
 
   postgres:
     image: postgres:11
-    
+    container_name: postgres
     command:
       - "postgres"
       - "-c"
@@ -53,7 +53,7 @@ services:
 
   cassandra:
     image: cassandra:3.11
-    
+    container_name: cassandra
     ports:
       - "9042:9042"
     healthcheck:
@@ -73,3 +73,9 @@ volumes:
   cassandra-volume:
   postgres-volume:
 
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.238.64/26
