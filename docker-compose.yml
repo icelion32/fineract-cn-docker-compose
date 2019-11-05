@@ -127,7 +127,6 @@ services:
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
       postgresql.password: postgres
-      postgresql.port: 5432
       postgresql.user: postgres
       rhythm.beatCheckRate: 600000
       rhythm.user: ${SCHEDULER_USER_NAME}
@@ -266,7 +265,6 @@ services:
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
       postgresql.password: postgres
-      postgresql.port: 5432
       postgresql.user: postgres
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
@@ -313,7 +311,6 @@ services:
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
       postgresql.password: postgres
-      postgresql.port: 5432
       postgresql.user: postgres
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
