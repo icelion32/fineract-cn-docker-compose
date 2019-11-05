@@ -10,7 +10,6 @@ services:
       bonecp.maxConnectionsPerPartition: 4
       bonecp.minConnectionsPerPartition: 1
       bonecp.partitionCount: 1
-      postgresql.port: 5432
       cassandra.cl.delete: ONE
       cassandra.cl.read: ONE
       cassandra.cl.write: ONE
@@ -75,7 +74,6 @@ services:
       eureka.instance.hostname: identity-ms
       eureka.instance.leaseRenewalIntervalInSeconds: ${EUREKA_INSTANCE_LEASERENEWALINTERVALINSECONDS}
       eureka.registration.enabled: "true"
-      postgresql.port: 5432
       feign.hystrix.enabled: "false"
       identity.token.refresh.secureCookie: "false"
       postgresql.host: ${POSTGRESQL_HOST}
@@ -114,7 +112,6 @@ services:
       cassandra.cl.read: ONE
       cassandra.cl.write: ONE
       cassandra.cluster.pwd: password
-      
       cassandra.cluster.user: cassandra
       cassandra.clusterName: ${CASSANDRA_CLUSTER_NAME}
       cassandra.contactPoints: ${CASSANDRA_CONTACT_POINTS}
@@ -181,7 +178,6 @@ services:
       feign.hystrix.enabled: "false"
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -226,7 +222,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -270,7 +265,6 @@ services:
       feign.hystrix.enabled: "false"
       postgresql.database: seshat
       postgresql.host: ${POSTGRESQL_HOST}
-      
       postgresql.password: postgres
       postgresql.port: 5432
       postgresql.user: postgres
@@ -351,7 +345,6 @@ services:
       cassandra.contactPoints: ${CASSANDRA_CONTACT_POINTS}
       cassandra.keyspace: ${CASSANDRA_KEYSPACE}
       eureka.client.fetchRegistry: "true"
-      postgresql.port: 5432
       eureka.client.initialInstanceInfoReplicationIntervalSeconds: ${EUREKA_CLIENT_INITIALINSTANCEINFOREPLICATIONINTERVALSECONDS}
       eureka.client.instanceInfoReplicationIntervalSeconds: ${EUREKA_CLIENT_INSTANCEINFOREPLICATIONINTERVALSECONDS}
       eureka.client.serviceUrl.defaultZone: ${EUREKA_CLIENT_SERVICE_URL_DEFAULT_ZONE}
@@ -404,7 +397,6 @@ services:
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
       server.port: 2028
-      postgresql.port: 5432
       spring.application.name: teller-v1
       spring.cloud.config.enabled: "false"
       spring.cloud.discovery.enabled: "true"
@@ -436,7 +428,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -472,7 +463,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -508,7 +498,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -544,7 +533,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
@@ -580,7 +568,6 @@ services:
       eureka.registration.enabled: "true"
       feign.hystrix.enabled: "false"
       postgresql.host: ${POSTGRESQL_HOST}
-      postgresql.port: 5432
       ribbon.eureka.enabled: "true"
       ribbon.listOfServers: ${RIBBON_EUREKA_SERVER}
       server.max-http-header-size: ${SERVER_MAX_HTTP_HEADER_SIZE}
